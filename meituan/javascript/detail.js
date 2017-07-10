@@ -3,6 +3,6 @@
  */
 $(document).on("pageinit", function(){
     $("#left img").on("tap", function(){
-        location.href = "index.html";
+        location.href = "index2.html";
     });
 });
