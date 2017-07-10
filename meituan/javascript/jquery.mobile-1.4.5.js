@@ -22,9 +22,9 @@
 		factory( root.jQuery, root, doc );
 	}
 }( this, document, function ( jQuery, window, document, undefined ) {
-(function( $ ) {
-	$.mobile = {};
-}( jQuery ));
+	(function( $ ) {
+		$.mobile = {};
+	}( jQuery ));
 
 /*!
  * jQuery UI Core c0ab71056b936627e8a7821f03c044aec6280a40
