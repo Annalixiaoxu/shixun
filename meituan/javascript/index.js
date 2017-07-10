@@ -19,6 +19,33 @@ $(function(){
             left: 0
         });
     });
+    $("#go-top").on("tap", function(){
+        if($(window).scrollTop() <= 1){
+            return false;
+        }
+        $("body").animate({
+            scrollTop : 0
+        }, 500);
+        var top = $(this).css("top");
+        $(this).animate({
+            top: 0
+        }, 500, function(){
+            $(this).css("top", top);
+        });
+    });
+
+    $("#menu li").on("tap", function(){
+        location.href = "detail.html";
+    });
+
+
+
+    function swipeGuide(index){
+        $navSpan.eq(index).addClass("active").siblings().removeClass("active");
+        $guideUl.css({
+            left: -index * $guideUl.width() / 2
+        });
+    }
 
 });
 
