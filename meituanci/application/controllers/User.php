@@ -8,7 +8,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  */
 class User extends CI_Controller
 {
-
+    public function __construct()
+    {
+        parent::__construct();
+        $this -> load -> model("user_model");
+        $this -> load -> model("order_model");
+    }
     public function login()
     {
         $username = $this -> input -> post("username");
@@ -53,5 +58,22 @@ class User extends CI_Controller
     public function register_page()
     {
         $this -> load -> view("register");
+    }
+
+    public function logout()
+    {
+        $this->session->unset_userdata('userinfo');
+
+        redirect("welcome");
+    }
+
+    public function user_detail()
+    {
+        $userinfo = $this->session->userdata('userinfo');;
+        $user_id = $userinfo -> user_id;
+        $order_list = $this -> order_model -> get_order_by_user_id($user_id);
+        $this->load->view('user_detail', array(
+            "order_list" => $order_list
+        ));
     }
 }
