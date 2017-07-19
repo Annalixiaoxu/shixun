@@ -1,0 +1,22 @@
+/*样式重置开始*/
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    border: 0;
+}
+/*样式重置结束*/
+
+/*通用样式开始*/
+body{
+    font-size: 18px;
+    color: #ffffff;
+}
+/*通用样式结束*/
