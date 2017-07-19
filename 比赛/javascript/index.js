@@ -85,13 +85,3 @@ $("#go-up").on("click", function(){
 
  });
 
-
-
-
-
-
-
-
-
-
-

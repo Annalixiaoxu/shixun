@@ -41,7 +41,7 @@
     </thead>
              
     <tbody>
-                <?php foreach ($order_list as $order): ?>
+      <?php foreach ($order_list as $order): ?>
         <tr>
             <td><?php echo $order->order_id; ?></td>
             <td><?php echo $order->product_name; ?></td>
