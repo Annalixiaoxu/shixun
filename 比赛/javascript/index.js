@@ -19,6 +19,22 @@ $("#competition-rules").on("click", function(){
      }, 500);
 
  });
+
+//点开全文
+$("#open-all").on("click",function(){
+    $("#STEP-02-text").css('overflow','auto');
+    $("#STEP-02-text").css('height','inherit');
+    $("#open-all").css('display','none');
+    $("#put-away").css('display','block');
+});
+$("#put-away").on("click",function(){
+    $("#STEP-02-text").css('overflow','hidden');
+    $("#STEP-02-text").css('height','80px');
+    $("#open-all").css('display','block');
+    $("#put-away").css('display','none');
+});
+
+//轮播图
 var oBanner = document.getElementById('banner');
 var oTab = document.getElementById('tab');
 var aLi = oTab.getElementsByTagName('li');
