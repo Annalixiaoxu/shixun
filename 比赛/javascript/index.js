@@ -101,3 +101,12 @@ $("#go-up").on("click", function(){
 
  });
 
+
+$(".work").on("mouseover",function(){
+    $(this).css("border-width","1px");
+    $(this).css("border-style","solid");
+    $(this).css("border-color","#c55d09");
+});
+$(".work").on("mouseout",function(){
+    $(this).css("border","none");
+});

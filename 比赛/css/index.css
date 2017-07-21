@@ -163,21 +163,20 @@
 }
 
 #works{
-    height: 900px;
     margin-left: 65px;
     margin-top: 100px;
 }
 
 #works img{
-    float: left;
-    width: 20%;
-    height: 20%;
+    /*float: left;*/
+    width: 25%;
+    height: 25%;
     margin-right: 35px;
     margin-bottom: 50px;
 }
-#works img:hover{
-    border: 1px solid #c55d09;
-}
+/*#works img:hover{*/
+    /*border: 1px solid #c55d09;*/
+/*}*/
 #return{
     width: 100%;
     text-align: center;
