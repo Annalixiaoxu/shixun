@@ -29,7 +29,7 @@ $("#open-all").on("click",function(){
 });
 $("#put-away").on("click",function(){
     $("#STEP-02-text").css('overflow','hidden');
-    $("#STEP-02-text").css('height','80px');
+    $("#STEP-02-text").css('height','273px');
     $("#open-all").css('display','block');
     $("#put-away").css('display','none');
 });
