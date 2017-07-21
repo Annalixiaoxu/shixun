@@ -102,11 +102,19 @@ $("#go-up").on("click", function(){
  });
 
 
-$(".work").on("mouseover",function(){
+$("#works img").on("mouseover",function(){
     $(this).css("border-width","1px");
     $(this).css("border-style","solid");
     $(this).css("border-color","#c55d09");
 });
-$(".work").on("mouseout",function(){
+$("#works img").on("mouseout",function(){
     $(this).css("border","none");
 });
+
+$("#work1").on("click", function(){
+    location.href = "detail.html";
+});
+$("#work2").on("click",function(){
+
+
+})
