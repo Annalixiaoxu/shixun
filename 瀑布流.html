@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>瀑布流布局</title>
+    <style>
+        *{ margin:0; padding:0}
+        #content{ width:940px; height:auto; margin: 20px auto;}
+        ul{ width: 225px; margin: 5px; float:left;}
+        li{ list-style:none; margin: 15px 5px; border: 1px solid #ccc;}
+        li img{ width: 100%; height:auto;}
+    </style>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script>
+        /*
+
+         思路：
+         1，先解决流式布局效果，这个只需要使用上面的CSS设置就可以了
+         2，再解决当网页滚动出可视区域后，动态加载新图片的问题，因为不能一次性将所有的图片全面加载进来
+         */
+        window.onload = function(){
+
+            var arrUl = document.getElementsByTagName("ul");
+            window.onscroll = function(){
+                var viewHeight = document.documentElement.clientHeight;//获得屏幕可视区域的高度
+                var scrollPos = document.documentElement.scrollTop || document.body.scrollTop;//获得滚动条滚动距离，做了兼容性处理
+                for(var i=0; i<arrUl.length; i++){
+                    var arrLi = arrUl[i].getElementsByTagName("li");
+                    var lastLi = arrLi[arrLi.length - 1];//得到ul中最后一个li
+                    if(posTop(lastLi) < viewHeight + scrollPos){//判断这最后一个li距离屏幕上边的距离是否小于屏幕可视区域，即最后一个元素进入了可视区
+                        $.get('data.js',function(str){
+                            var json = eval('(' + str + ')');//将返回的字符串解释成js对象
+                            for(var j=0; j<json.dataList.length; j++){//循环返回的json对象中的数据列表
+                                var data = json.dataList[j];
+                                for(var k=0; k<data.src.length; k++){
+                                    var oLi = document.createElement('li');
+                                    oLi.innerHTML = '<img src="'+ data.src[k] +'"/><p class="title">'+data.title[k]+'</p>';
+                                    arrUl[j].appendChild(oLi);
+                                }
+                            }
+                        },'text');
+                    }
+                }
+            };
+
+            /**
+             获得元素距离屏幕界上边的像素
+             */
+            function posTop(elem){
+                var top = 0;
+                while(elem){
+                    top += elem.offsetTop;
+                    elem = elem.offsetParent;
+                }
+                return top;
+            }
+
+        };
+    </script>
+</head>
+
+<body>
+<div id="content">
+    <ul>
+        <li>
+            <img src="images/1.jpg"/>
+            <p class="title">漂亮的衣服...</p>
+        </li>
+        <li>
+            <img src="images/2.jpg"/>
+            <p class="title">漂亮的衣服...</p>
+        </li>
+        <li>
+            <img src="images/3.jpg"/>
+            <p class="title">漂亮的衣服...</p>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="images/4.jpg"/>
+            <p class="title">漂亮的衣服...</p>
+        </li>
+        <li>
+            <img src="images/5.jpg"/>
+            <p class="title">漂亮的衣服...</p>
+        </li>
+        <li>
+            <img src="images/6.jpg"/>
+            <p class="title">漂亮的衣服...</p>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="images/7.jpg"/>
+            <p class="title">漂亮的衣服...</p>
+        </li>
+        <li>
+            <img src="images/8.jpg"/>
+            <p class="title">漂亮的衣服...</p>
+        </li>
+        <li>
+            <img src="images/9.jpg"/>
+            <p class="title">漂亮的衣服...</p>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="images/10.jpg"/>
+            <p class="title">漂亮的衣服...</p>
+        </li>
+        <li>
+            <img src="images/11.jpg"/>
+            <p class="title">漂亮的衣服...</p>
+        </li>
+        <li>
+            <img src="images/12.jpg"/>
+            <p class="title">漂亮的衣服...</p>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

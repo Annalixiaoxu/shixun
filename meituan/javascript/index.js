@@ -27,7 +27,7 @@ $(document).on("pageinit",function(event){
     });
 
     $("#menu li").on("tap", function(){
-        location.href = "detail.html";
+        location.href = "detaillizhixiang.html";
     });
 
 

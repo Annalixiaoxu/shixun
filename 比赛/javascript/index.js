@@ -35,61 +35,66 @@ $("#put-away").on("click",function(){
 });
 
 //ÂÖ²¥Í¼
-var oBanner = document.getElementById('banner');
-var oTab = document.getElementById('tab');
-var aLi = oTab.getElementsByTagName('li');
-var oContent = document.getElementById('content');
-var aImg = oContent.getElementsByTagName('img');
-var oPrev = document.getElementById('prev');
-var oNext = document.getElementById('next');
+var oBanner = document.getElementById("banner");
+var oTab = document.getElementById("tab");
+var aLi = oTab.getElementsByTagName("li");
+var oContent2 = document.getElementById("content2");
+var aImg = oContent2.getElementsByTagName("img");
+var oPrev = document.getElementById ("prev");
+var oNext = document.getElementById ("next");
 
 var iNow = 0;
-
-for(var i=0; i<aLi.length; i++){
+for(var i=0;i<aLi .length;i++){
     aLi[i].index = i;
-    aLi[i].onmouseover = function(){
+    aLi[i].onmouseover = function (){
+        iNow = this.index;
         changeImg(this.index);
     };
-}
 
-oPrev.onclick = function(){
+};
+
+oPrev.onclick = function (){
     iNow--;
     if(iNow == -1){
         iNow = aLi.length - 1;
     }
     changeImg(iNow);
+
 };
-oNext.onclick = function(){
+
+oNext.onclick = function () {
     iNow++;
-    if(iNow == aLi.length){
+    if (iNow == aLi.length) {
         iNow = 0;
+
     }
     changeImg(iNow);
 };
 
 function changeImg(idx){
-    for(var i=0; i<aLi.length; i++){
-        aLi[i].className = '';
-        aImg[i].className = '';
+    for (var i=0; i<aLi.length; i++){
+        aLi[i].className = "";
+        aImg[i].className = "";
     }
-    aLi[idx].className = 'selected';
-    aImg[idx].className = 'selected';
+    aLi[idx].className = "selected";
+    aImg[idx].className = "selected";
 }
 
 var timer;
 function run(){
-    timer = setInterval(function(){
-        oNext.onclick();
-    }, 2000);
+    timer = setInterval(function (){
+        oNext.onclick() ;
+    },2000);
 }
-run();
+run() ;
 
-oBanner.onmouseover = function(){
-    clearInterval(timer);
+oBanner.onmouseover = function (){
+    clearInterval (timer );
 };
-oBanner.onmouseout = function(){
-    run();
+oBanner.onmouseout = function (){
+    run() ;
 };
+
 
 $("#go-up").on("click", function(){
      if($(window).scrollTop() <= 1){
@@ -101,7 +106,6 @@ $("#go-up").on("click", function(){
 
  });
 
-
 $("#works img").on("mouseover",function(){
     $(this).css("border-width","1px");
     $(this).css("border-style","solid");
@@ -112,9 +116,41 @@ $("#works img").on("mouseout",function(){
 });
 
 $("#work1").on("click", function(){
-    location.href = "detail.html";
+    location.href = "detaillizhixiang.html";
 });
 $("#work2").on("click",function(){
-
-
-})
+    location.href = "detailchenxiaodan.html";
+});
+$("#work3").on("click",function(){
+    location.href = "detailgelin.html";
+});
+$("#work4").on("click",function(){
+    location.href = "detailhuruikun.html";
+});
+$("#work5").on("click",function(){
+    location.href = "detailliubingyan.html";
+});
+$("#work6").on("click",function(){
+    location.href = "detailwanglin.html";
+});
+$("#work7").on("click",function(){
+    location.href = "detailxufei.html";
+});
+$("#work8").on("click",function(){
+    location.href = "detailzhangzikai.html";
+});
+$("#work9").on("click",function(){
+    location.href = "detailzhouying.html";
+});
+$("#work10").on("click",function(){
+    location.href = "detaildaidejin.html";
+});
+$("#work11").on("click",function(){
+    location.href = "detailwangguangsheng.html";
+});
+$("#work12").on("click",function(){
+    location.href = "detailwanghaichun.html";
+});
+$("#work13").on("click",function(){
+    location.href = "detailqihang.html";
+});

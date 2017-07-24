@@ -2,6 +2,7 @@
     width: 100%;
     background: #151732;
     position: absolute;
+    height: 3200px;
 }
 #img1{
     width: 100%;
@@ -53,12 +54,15 @@
 #STEP-01{
     margin: 20px 20px 30px 20px;
 }
+#school-introduce{
+    line-height: 20px;
+}
 #STEP-02{
     margin: 20px 20px 30px 20px;
     position: relative;
 }
 #STEP-02-text{
-    height: 270px;
+    height: 273px;
     overflow: hidden;
 }
 #STEP-02 p{
@@ -67,6 +71,10 @@
 }
 .step{
     color: #e86800;
+
+}
+.duan{
+    line-height: 30px;
 }
 #STEP-02 span{
     border-bottom: dotted;
@@ -107,9 +115,11 @@
 }
 #third{
     width: 100%;
+
 }
 #banner{
     position: relative;
+    overflow: hidden;
 }
 #prev{
     width: 30px;
@@ -126,20 +136,6 @@
     top: 150px;
     right: 30px;
     cursor: pointer;
-}
-
-#imgs{
-    margin-left: 65px;
-    margin-right: 65px;
-    height: 300px;
-    overflow: hidden;
-}
-
-#imgs.selected{
-    display: block;
-}
-#content.selected{
-    display: block;
 }
 #tab{
     position: absolute;
@@ -160,16 +156,40 @@
 #tab .selected{
     background: #ffffff;
 }
+#content2{
+    margin-left: 65px;
+    margin-right: 65px;
+    height: 300px;
+    overflow: hidden;
+}
+#content2 img{
+    width: 100%;
+    display: none;
+}
+#content .selected{
+    display: block;
+}
 
 #works{
     margin: 10% 10%;
 }
 
 #works img{
-    width: 25%;
-    height: 25%;
-    margin-left: 60px;
-    margin-bottom: 100px;
+    /*width: 20%;*/
+    /*height: 130px;*/
+    /*margin-left: 30px;*/
+    /*margin-bottom: 70px;*/
+}
+ul{
+    width: 26%;
+    margin: 15px 20px;
+    float:left;
+}
+li{
+    margin: 15px 15px;
+}
+li img{
+    width: 100%;
 }
 
 #return{
