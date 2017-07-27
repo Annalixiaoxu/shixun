@@ -4,14 +4,8 @@
     <meta charset="UTF-8">
     <title>作品页面详情</title>
     <link rel="stylesheet" href="css/detail.css"/>
-    <style>
-        #detail{
-            height: 1500px;
-        }
-        .heng{
-            width: 40%;
-        }
-    </style>
+    <link rel="stylesheet" href="css/lightbox.min.css"/>
+
 </head>
 <body>
 <div id="detail">
@@ -24,23 +18,24 @@
             <h5>信息学院|计算机5班</h5>
 
             <a href="http://47.94.141.99:8080/onlineShopping/index.jsp">
-                <h3>网上书店</h3></a>
+                <h2>网上书店</h2></a><br><br>
 
         </div>
         <div id="information">
-            <h3>项目介绍</h3>
-            <p>
-                就是写一个关于读书人选购的地方
-            </p>
-        </div>
-    </div>
-    <div id="right">
-        <div id="introduce">
             <h2>团队介绍</h2>
             <p>
                 小组团队共5人，小组组长是张子恺，小组成员包括程士卿、王卓文、代快、黄晩晴，
                 均是信息与计算机工程学院计算机科学与技术2014级学生，现为大三学生。
                 小组成员已通过学院开设的相关课程学习了Java Web技术、Web框架技术等。
+            </p>
+
+        </div>
+    </div>
+    <div id="right">
+        <div id="introduce">
+            <h2>项目介绍</h2>
+            <p>
+                就是写一个关于读书人选购的地方
             </p>
         </div>
         <div id="members">
@@ -58,16 +53,28 @@
         </div>
         <div id="picture">
             <h2>项目展示</h2>
-            <img src="img/zhangzikaiimg/1.jpg" alt=""  class="heng"/>
-            <img src="img/zhangzikaiimg/2.jpg" alt=""  class="heng"/>
-            <img src="img/zhangzikaiimg/3.jpg" alt=""  class="heng"/>
-            <img src="img/zhangzikaiimg/4.jpg" alt=""  class="heng"/>
-            <img src="img/zhangzikaiimg/5.jpg" alt=""  class="heng"/>
-            <img src="img/zhangzikaiimg/6.jpg" alt=""  class="heng"/>
+            <div id="hovertreeshow">
+                <a class="example-image-link" href="img/zhangzikaiimg/1.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/zhangzikaiimg/1.jpg" width="38%" alt=""/>
+                </a>
+                <a class="example-image-link" href="img/zhangzikaiimg/2.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/zhangzikaiimg/2.jpg" width="38%" alt="" /></a>
+                <a class="example-image-link" href="img/zhangzikaiimg/3.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/zhangzikaiimg/3.jpg" width="38%" alt="" /></a>
+                <a class="example-image-link" href="img/zhangzikaiimg/4.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/zhangzikaiimg/4.jpg" width="38%" alt="" /></a>
+                <a class="example-image-link" href="img/zhangzikaiimg/5.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/zhangzikaiimg/5.jpg" width="38%" alt="" /></a>
+                <a class="example-image-link" href="img/zhangzikaiimg/6.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/zhangzikaiimg/6.jpg" width="38%" alt="" /></a>
+
+            </div>
+
 
         </div>
     </div>
 </div>
+<script src="javascript/lightbox-plus-jquery.min.js"></script>
 
 </body>
 </html>

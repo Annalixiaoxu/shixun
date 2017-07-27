@@ -1,64 +1,79 @@
+body{
+    background: #151732;
+}
 #container{
     width: 100%;
-    background: #151732;
     position: absolute;
-    height: 3200px;
+    min-width: 950px;
 }
 #img1{
     width: 100%;
 }
 #content{
-    position: relative;
-    width: 80%;
-    margin-left: 10%;
-    top: 0;
+    width: 1200px;
+    margin: 0 auto;
+}
+.wrapper{
+    width: 1100px;
+    margin: 0 auto;
 }
 .chinese{
     font-weight: bold;
     width: 40%;
-    font-size: 0.15rem;
+    font-size: 16px;
     float: left;
     text-align: center;
     line-height: 80px;
 }
 .english{
-    font-size: 0.12rem;
+    font-size: 16px;
     float: left;
     width: 60%;
     text-align:center ;
     line-height: 80px;
 }
 #college-introduce {
+    font-size: 16px;
     background: #d96300;
     width: 30%;
     height: 80px;
     float: left;
     cursor: pointer;
+    text-align: center;
+    line-height: 80px;
 }
 #competition-rules{
+    font-size: 16px;
     width: 33%;
     height: 80px;
     cursor: pointer;
     float: left;
     background: #a40700;
+    text-align: center;
+    line-height: 80px;
 
 }
 #exhibition-of-works{
+    font-size: 16px;
     width: 37%;
     height: 80px;
     float: left;
     background: #a40700;
     cursor: pointer;
+    text-align: center;
+    line-height: 80px;
+
 
 }
 #STEP-01{
-    margin: 20px 20px 30px 20px;
+    margin-top: 20px;
 }
 #school-introduce{
-    line-height: 20px;
+    line-height: 25px;
+    text-indent: 20px;
 }
 #STEP-02{
-    margin: 20px 20px 30px 20px;
+    margin-top: 20px;
     position: relative;
 }
 #STEP-02-text{
@@ -110,8 +125,9 @@
     text-align: center;
 }
 #STEP-03{
-    background: #000000;
-    margin: 30px 20px;
+    background: #1C1C1C;
+    margin-top: 20px;
+
 }
 #third{
     width: 100%;
@@ -139,31 +155,35 @@
 }
 #tab{
     position: absolute;
-    right: 80px;
-    bottom: 10px;
+    right: 75px;
+    bottom: 30px;
 }
 #tab li{
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     float: left;
-    background: #0000ff;
+    background: #e86800;
     color: #fff;
     margin-right: 5px;
     text-align: center;
     line-height: 20px;
     cursor: pointer;
+    border-radius: 50%;
 }
 #tab .selected{
-    background: #ffffff;
+    background: #fff;
 }
 #content2{
     margin-left: 65px;
     margin-right: 65px;
     height: 300px;
     overflow: hidden;
+    margin-bottom: 15px;
+
 }
 #content2 img{
     width: 100%;
+    height: 100%;
     display: none;
 }
 #content .selected{
@@ -171,32 +191,60 @@
 }
 
 #works{
-    margin: 10% 10%;
+    margin: 20px auto;
+    padding: 0 50px;
+    overflow: hidden;
 }
 
-#works img{
-    /*width: 20%;*/
-    /*height: 130px;*/
-    /*margin-left: 30px;*/
-    /*margin-bottom: 70px;*/
-}
-ul{
-    width: 26%;
-    margin: 15px 20px;
+#works ul{
+    width: 30%;
+    margin-right: 5%;
     float:left;
 }
-li{
-    margin: 15px 15px;
+#works li{
+    /*border: 1px solid #454545;*/
+    box-shadow: 1px 1px 3px rgba(255,255,255,.3);
+    -moz-box-shadow: 1px 1px 3px rgba(255,255,255,.3);
+    -webkit-box-shadow: 1px 1px 3px rgba(255,255,255,.3);
+    margin: 20px 15px;
+    background-color: #fff;
+    opacity: 0.9;
+    filter: alpha(opacity:90);
+    cursor: pointer;
+
 }
-li img{
+#works li:hover{
+    /*border-color: #c55d09;*/
+    opacity: 1;
+    filter: alpha(opacity:100);
+}
+#works li img{
     width: 100%;
 }
-
+#works li .title{
+    color: #444;
+    padding: 16px;
+}
+#works li .desc{
+    color: #444;
+    padding: 16px;
+    color: #999;
+    border-top: 1px solid #F2F2F2;
+    background: #FAFAFA
+}
+/*.jianjie{
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
+    width: 100%;
+    height: 33px;
+    overflow: hidden;
+}*/
 #return{
     width: 100%;
     text-align: center;
     color: #eee;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 30px;
     opacity: .5;
     filter: alpha(opacity=50);
@@ -223,7 +271,7 @@ li img{
 }
 #footer h6{
     width: 100%;
-    font-size: 16px;
+    font-size: 14px;
     color: #eee;
     opacity: .5;
     filter: alpha(opacity=50);

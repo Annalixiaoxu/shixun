@@ -4,17 +4,7 @@
     <meta charset="UTF-8">
     <title>作品页面详情</title>
     <link rel="stylesheet" href="css/detail.css"/>
-    <style>
-        .heng2{
-            width: 80%;
-        }
-        .heng{
-            width: 45%;
-        }
-        #detail{
-            height: 1650px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/lightbox.min.css"/>
 </head>
 <body>
 <div id="detail">
@@ -26,27 +16,23 @@
             <h3>刘丙妍</h3>
             <h5>信息学院|计算机1班</h5>
 
-            <a href="http://101.200.63.130/test/"><h3>童话镇购物网站</h3></a>
+            <a href="http://101.200.63.130/test/"><h2>作品链接：童话镇购物网站</h2></a><br><br>
         </div>
         <div id="information">
-            <h3>项目介绍</h3>
+            <h2>团队介绍</h2>
+            <p>本团队由五位成员组成。分别是刘丙妍、路梦遥、吕艾娜、于芮、温馨，五位同学都来自2014级计算机科学与技术1班。
+                项目开发过程中，团队成员积极协作，互相鼓励，最终完成了以童话镇为主题的购物网站，并通过了测试。
+                项目的成功离不开团队中每位同学的努力，同时我们也形成了一个新的有凝聚力的团队。</p>
+        </div>
+    </div>
+    <div id="right">
+        <div id="introduce">
+            <h2>项目介绍</h2>
             <p>
                 “童话镇”为一小型电商网站，网站主要陈列并销售鲜花、蛋糕、毛绒玩具等三大类礼品。
                 每一大类又分别分成不同的类。该项目主要实现用户的登录和注册，以及用户登陆后对礼品的选购等功能。
                 用户登录后即可选购礼品，通过礼品类别的id进行查询，从前台页面显示数据库中所有数据，以响应用户请求。
                 通过实现购物车的功能方便用户对系统的使用，通过对购物车表中记录的增删改查来方便用户管理自己的购物车。
-            </p>
-            <img src="img/liubingyanimg/4.jpg" alt=""  class="heng2"/>
-            <img src="img/liubingyanimg/5.jpg" alt=""  class="heng2"/>
-            <img src="img/liubingyanimg/6.jpg" alt=""  class="heng2"/>
-        </div>
-    </div>
-    <div id="right">
-        <div id="introduce">
-            <h2>团队介绍</h2>
-            <p>本团队由五位成员组成。分别是刘丙妍、路梦遥、吕艾娜、于芮、温馨，五位同学都来自2014级计算机科学与技术1班。
-                项目开发过程中，团队成员积极协作，互相鼓励，最终完成了以童话镇为主题的购物网站，并通过了测试。
-                项目的成功离不开团队中每位同学的努力，同时我们也形成了一个新的有凝聚力的团队。
             </p>
         </div>
         <div id="members">
@@ -65,12 +51,28 @@
         </div>
         <div id="picture">
             <h2>项目展示</h2>
-            <img src="img/liubingyanimg/1.jpg" alt=""  class="heng"/>
-            <img src="img/liubingyanimg/2.jpg" alt=""  class="heng"/>
-            <img src="img/liubingyanimg/3.jpg" alt=""  class="heng"/>
+            <div id="hovertreeshow">
+                <a class="example-image-link" href="img/liubingyanimg/1.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/liubingyanimg/1.jpg" width="38%" alt=""/>
+                </a>
+                <a class="example-image-link" href="img/liubingyanimg/6.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/liubingyanimg/6.jpg" width="38%" alt="" /></a>
+                <a class="example-image-link" href="img/liubingyanimg/2.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/liubingyanimg/2.jpg" width="38%" alt="" /></a>
+                <a class="example-image-link" href="img/liubingyanimg/3.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/liubingyanimg/3.jpg" width="38%" alt="" /></a>
+                <a class="example-image-link" href="img/liubingyanimg/4.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/liubingyanimg/4.jpg" width="38%" alt="" /></a>
+                <a class="example-image-link" href="img/liubingyanimg/5.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/liubingyanimg/5.jpg" width="38%" alt="" /></a>
+
+            </div>
+
 
         </div>
     </div>
 </div>
+<script src="javascript/lightbox-plus-jquery.min.js"></script>
+
 </body>
 </html>

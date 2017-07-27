@@ -4,18 +4,7 @@
     <meta charset="UTF-8">
     <title>作品页面详情</title>
     <link rel="stylesheet" href="css/detail.css"/>
-    <style>
-        .heng{
-            width: 90%;
-        }
-        .shu{
-            width: 40%;
-        }
-        img{
-            width: 300px;
-            height: 400px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/lightbox.min.css"/>
 </head>
 <body>
 <div id="detail">
@@ -26,30 +15,30 @@
         <div id="person">
             <h3>陈晓丹</h3>
             <h5>信息学院|计算机1班</h5>
-            <a href="http://101.200.63.130/myproject/home.html"><h3>链接：   模拟OPPO官网</h3></a>
+            <a href="http://101.200.63.130/myproject/home.html"><h2>作品链接：模拟OPPO官网</h2></a><br><br><br>
         </div>
         <div id="information">
-            <h3>项目介绍</h3>
+            <h2>团队介绍</h2>
+            <p>
+
+                本团队以团结协作为宗旨，以创新为驱动，通力合作，共同完成此次项目，
+                实现了模拟oppo手机售卖网站的基本功能，包括注册、登录、查看商品详情及加入购物车、
+                提交订单等。实现了前端浏览器端和后台服务器端，数据库的交互，各个成员能力有了很大的提高。
+            </p>
+            <br><br><br>
+
+
+        </div>
+    </div>
+    <div id="right">
+        <div id="introduce">
+            <h2>项目介绍</h2>
             <p>
                 Oppo官网为用户提供阅览手机种类，体验手机各项优质功能的服务，用户可以进行登录注册，
                 网上购物，添加购物车，删除购物车等一系列体验。
                 项目利用MVC开发模式，分别设置model层、dao层和control层。
                 其中model层实体类对应于数据库中的实体，dao层实现对数据库的增删改查，
                 control层负责响应用户请求向所请求的前台页面传值，以达到jsp动态页面显示数据库中数据的效果。
-
-            </p>
-            <br><br><br>
-            <img src="img/chenxiaodanimg/1.jpg" alt=""  class="heng"/><br><br><br>
-            <img src="img/chenxiaodanimg/5.jpg" alt=""  class="heng"/><br><br>
-
-        </div>
-    </div>
-    <div id="right">
-        <div id="introduce">
-            <h2>团队介绍</h2>
-            <p>本团队以团结协作为宗旨，以创新为驱动，通力合作，共同完成此次项目，
-                实现了模拟oppo手机售卖网站的基本功能，包括注册、登录、查看商品详情及加入购物车、
-                提交订单等。实现了前端浏览器端和后台服务器端，数据库的交互，各个成员能力有了很大的提高。
             </p>
         </div>
         <div id="members">
@@ -63,14 +52,27 @@
         </div>
         <div id="picture">
             <h2>项目展示</h2>
-            <br><br><br><br>
-            <img src="img/chenxiaodanimg/2.jpg" alt=""  class="shu"/>
-            <img src="img/chenxiaodanimg/3.jpg" alt=""  class="shu"/>
-            <img src="img/chenxiaodanimg/4.jpg" alt=""  class="shu"/>
-            <img src="img/chenxiaodanimg/6.jpg" alt=""  class="shu"/>
+            <br><br>
+            <div id="hovertreeshow">
+                <a class="example-image-link" href="img/chenxiaodanimg/1.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/chenxiaodanimg/1.jpg" width="40%" alt=""/>
+                </a>
+                <a class="example-image-link" href="img/chenxiaodanimg/6.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/chenxiaodanimg/6.jpg" width="30%" alt="" /></a>
+                <a class="example-image-link" href="img/chenxiaodanimg/5.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/chenxiaodanimg/5.jpg" width="40%" alt="" /></a>
+                <a class="example-image-link" href="img/chenxiaodanimg/2.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/chenxiaodanimg/2.jpg" width="30%" alt="" /></a>
+                <a class="example-image-link" href="img/chenxiaodanimg/3.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/chenxiaodanimg/3.jpg" width="30%" alt="" /></a>
+                <a class="example-image-link" href="img/chenxiaodanimg/4.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/chenxiaodanimg/4.jpg" width="400" alt="" /></a>
 
+            </div>
         </div>
     </div>
 </div>
+
+<script src="javascript/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>

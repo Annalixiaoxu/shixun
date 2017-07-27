@@ -4,12 +4,7 @@
     <meta charset="UTF-8">
     <title>作品页面详情</title>
     <link rel="stylesheet" href="css/detail.css"/>
-    <style>
-        .heng{
-            width: 65%;
-        }
-
-    </style>
+    <link rel="stylesheet" href="css/lightbox.min.css"/>
 </head>
 <body>
 <div id="detail">
@@ -20,29 +15,40 @@
         <div id="person">
             <h3>葛林</h3>
             <h5>信息学院|软件1班</h5>
-            <a href="http://59.110.136.165:8080/newxtcxsj/"><h3>软件工程专业管理系统</h3></a><br>        </div>
+            <a href="http://59.110.136.165:8080/newxtcxsj/"><h2>作品链接：软件工程专业管理系统</h2></a><br>        </div>
         <div id="information">
-            <h3>项目介绍</h3><br><br><br>
-            <p>本作品是一个专业管理系统，主要用于教师监考的分配以及教师任务管理。<br>
-               本系统分为三种用户权限：普通用户、管理员和超级管理员，普通用户可以查看所有的考试安排、和自己相关的考试安排、所有任务下达、任务完成情况。管理员在普通用户权限基础上添加了普通用户的管理和监考任务的添加分配，超级管理员在此基础上添加了设置学期基点时间和用户权限变更功能，系统对监考分配的条件做出了一定的限制以满足实际情况的需求，对上传文件有相应的类型限制。</p>
+            <h2>个人介绍</h2><br><br><br>
+            <p>葛林<br>
+            一名大三学生，专业排名第三，黑龙江省三好学生，多次参加大赛并获得较好名次，在校期间参与国家级大学生创新创业项目，在黑龙件科学杂志发表论文，助人为乐，有原则。</p>
         </div>
     </div>
     <div id="right">
         <div id="introduce">
-            <h2>个人介绍</h2>
-            <p>葛林<br>
-                一名大三学生，专业排名第三，黑龙江省三好学生，多次参加大赛并获得较好名次，在校期间参与国家级大学生创新创业项目，在黑龙件科学杂志发表论文，助人为乐，有原则。</p>
+            <h2>项目介绍</h2>
+            <p>本作品是一个专业管理系统，主要用于教师监考的分配以及教师任务管理。<br>
+                本系统分为三种用户权限：普通用户、管理员和超级管理员，普通用户可以查看所有的考试安排、和自己相关的考试安排、所有任务下达、任务完成情况。管理员在普通用户权限基础上添加了普通用户的管理和监考任务的添加分配，超级管理员在此基础上添加了设置学期基点时间和用户权限变更功能，系统对监考分配的条件做出了一定的限制以满足实际情况的需求，对上传文件有相应的类型限制。</p>
         </div>
         <div id="picture">
             <h2>项目展示</h2>
-            <img src="img/gelinimg/1.jpg" alt="" class="heng"/>
-            <img src="img/gelinimg/2.jpg" alt="" class="heng"/>
-            <img src="img/gelinimg/3.jpg" alt="" class="heng"/>
-            <img src="img/gelinimg/4.jpg" alt="" class="heng"/>
-            <img src="img/gelinimg/5.jpg" alt="" class="heng"/>
-            <img src="img/gelinimg/6.jpg" alt="" class="heng"/>
+            <div id="hovertreeshow">
+                <a class="example-image-link" href="img/gelinimg/1.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/gelinimg/1.jpg" width="50%" alt=""/>
+                </a>
+                <a class="example-image-link" href="img/gelinimg/2.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/gelinimg/2.jpg" width="50%" alt="" /></a>
+                <a class="example-image-link" href="img/gelinimg/3.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/gelinimg/3.jpg" width="50%" alt="" /></a>
+                <a class="example-image-link" href="img/gelinimg/4.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/gelinimg/4.jpg" width="50%" alt="" /></a>
+                <a class="example-image-link" href="img/gelinimg/5.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/gelinimg/5.jpg" width="50%" alt="" /></a>
+                <a class="example-image-link" href="img/gelinimg/6.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/gelinimg/6.jpg" width="50%" alt="" /></a>
+
+            </div>
         </div>
     </div>
 </div>
+<script src="javascript/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>

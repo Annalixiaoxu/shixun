@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <title>作品页面详情</title>
     <link rel="stylesheet" href="css/detail.css"/>
-    <style>
-        .heng{
-            width: 60%;
-        }
-    </style>
+    <link rel="stylesheet" href="css/lightbox.min.css"/>
+
 </head>
 <body>
 <div id="detail">
@@ -19,31 +16,42 @@
         <div id="person">
             <h3>齐航</h3>
             <h5>信息学院|计算机4班</h5>
-            <a href="http://101.200.63.130/jqm"><h3>旅游网站前后台管理系统</h3></a>
+            <a href="http://101.200.63.130/jqm"><h2>作品链接：旅游网站前后台管理系统</h2></a><br><br>
         </div>
         <div id="information">
-            <h3>项目介绍</h3>
-            <p>
-                本项目为旅游风景区网站前后台管理系统，主要分为两个主要组成部分，一个是前台展示部分，用于向普通用户进行展示；另一部分是后台内容管理部分，用于网站管理员对网站内容的添加、审核、修改以及删除。项目中使用了一些经典的开发技术如Servlet、JavaScript等，业务逻辑方面考虑到了实际管理项目中的诸多操作，具有一定的实用价值和实际意义。
-            </p>
+            <h2>个人介绍</h2>
+            <p>齐航，Java初学者，对于新技术新知识有很高的热情，敢于挑战困难，不怕艰难险阻。</p>
         </div>
     </div>
     <div id="right">
         <div id="introduce">
-            <h2>个人介绍</h2>
-            <p>齐航，Java初学者，对于新技术新知识有很高的热情，敢于挑战困难，不怕艰难险阻。</p>
+            <h2>项目介绍</h2>
+            <p>
+                本项目为旅游风景区网站前后台管理系统，主要分为两个主要组成部分，一个是前台展示部分，用于向普通用户进行展示；另一部分是后台内容管理部分，用于网站管理员对网站内容的添加、审核、修改以及删除。项目中使用了一些经典的开发技术如Servlet、JavaScript等，业务逻辑方面考虑到了实际管理项目中的诸多操作，具有一定的实用价值和实际意义。
+            </p>
         </div>
         <div id="picture">
             <h2>项目展示</h2>
-            <img src="img/qihangimg/1.jpg" alt=""  class="heng"/>
-            <img src="img/qihangimg/2.jpg" alt=""  class="heng"/>
-            <img src="img/qihangimg/3.jpg" alt=""  class="heng"/>
-            <img src="img/qihangimg/4.jpg" alt=""  class="heng"/>
-            <img src="img/qihangimg/5.jpg" alt=""  class="heng"/>
-            <img src="img/qihangimg/6.jpg" alt=""  class="heng"/>
+            <div id="hovertreeshow">
+                <a class="example-image-link" href="img/qihangimg/1.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/qihangimg/1.jpg" width="50%" alt=""/>
+                </a>
+                <a class="example-image-link" href="img/qihangimg/2.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/qihangimg/2.jpg" width="50%" alt="" /></a>
+                <a class="example-image-link" href="img/qihangimg/3.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/qihangimg/3.jpg" width="50%" alt="" /></a>
+                <a class="example-image-link" href="img/qihangimg/4.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/qihangimg/4.jpg" width="50%" alt="" /></a>
+                <a class="example-image-link" href="img/qihangimg/5.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/qihangimg/5.jpg" width="50%" alt="" /></a>
+                <a class="example-image-link" href="img/qihangimg/6.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/qihangimg/6.jpg" width="50%" alt="" /></a>
+
+            </div>
         </div>
     </div>
 </div>
+<script src="javascript/lightbox-plus-jquery.min.js"></script>
 
 </body>
 </html>

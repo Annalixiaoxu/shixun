@@ -4,15 +4,8 @@
     <meta charset="UTF-8">
     <title>作品页面详情</title>
     <link rel="stylesheet" href="css/detail.css"/>
-    <style>
-        #detail{
-            height: 1300px;
-        }
-        .heng{
-            width: 40%;
-        }
+    <link rel="stylesheet" href="css/lightbox.min.css"/>
 
-    </style>
 </head>
 <body>
 <div id="detail">
@@ -23,23 +16,19 @@
         <div id="person">
             <h3>王琳</h3>
             <h5>信息学院|信管1班</h5>
-
-            <a href="http://60.205.230.72:8080/HCOA/login.jsp"><h3>OA管理系统</h3></a>
+            <a href="http://60.205.230.72:8080/HCOA/login.jsp"><h2>作品链接：OA管理系统</h2></a><br><br>
         </div>
         <div id="information">
-            <h3>项目介绍</h3>
+            <h2>团队介绍</h2>
             <p>
-                本项目为哈尔滨市交通基础设施投资建设管理有限公司（以下简称哈尔滨市交通局）办公自动化系统平台。
-                项目主要解决哈尔滨交通局内部人员、部门等基本信息的管理以及对发文、申请立项等公文内容的审核等需求。
+                由王琳、贾志博、刘创、高嵩 、谢上进组成的团队
             </p>
         </div>
     </div>
     <div id="right">
         <div id="introduce">
-            <h2>团队介绍</h2>
-            <p>本团队以团结协作为宗旨，以创新为驱动，通力合作，共同完成此次项目，
-                实现了模拟oppo手机售卖网站的基本功能，包括注册、登录、查看商品详情及加入购物车、
-                提交订单等。实现了前端浏览器端和后台服务器端，数据库的交互，各个成员能力有了很大的提高。
+            <h2>项目介绍</h2>
+            <p>本项目为哈尔滨市交通基础设施投资建设管理有限公司（以下简称哈尔滨市交通局）办公自动化系统平台。项目主要解决哈尔滨交通局内部人员、部门等基本信息的管理以及对发文、申请立项等公文内容的审核等需求。
             </p>
         </div>
         <div id="members">
@@ -54,16 +43,27 @@
         </div>
         <div id="picture">
             <h2>项目展示</h2>
-            <img src="img/wanglinimg/1.jpg" alt=""  class="heng"/>
-            <img src="img/wanglinimg/2.jpg" alt=""  class="heng"/>
-            <img src="img/wanglinimg/3.jpg" alt=""  class="heng"/>
-            <img src="img/wanglinimg/4.jpg" alt=""  class="heng"/>
-            <img src="img/wanglinimg/5.jpg" alt=""  class="heng"/>
-            <img src="img/wanglinimg/6.jpg" alt=""  class="heng"/>
+            <div id="hovertreeshow">
+                <a class="example-image-link" href="img/wanglinimg/1.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/wanglinimg/1.jpg" width="38%" alt=""/>
+                </a>
+                <a class="example-image-link" href="img/wanglinimg/2.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/wanglinimg/2.jpg" width="38%" alt="" /></a>
+                <a class="example-image-link" href="img/wanglinimg/3.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/wanglinimg/3.jpg" width="38%" alt="" /></a>
+                <a class="example-image-link" href="img/wanglinimg/4.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/wanglinimg/4.jpg" width="38%" alt="" /></a>
+                <a class="example-image-link" href="img/wanglinimg/5.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/wanglinimg/5.jpg" width="38%" alt="" /></a>
+                <a class="example-image-link" href="img/wanglinimg/6.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/wanglinimg/6.jpg" width="38%" alt="" /></a>
+
+            </div>
 
         </div>
     </div>
 </div>
+<script src="javascript/lightbox-plus-jquery.min.js"></script>
 
 </body>
 </html>

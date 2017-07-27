@@ -4,14 +4,7 @@
     <meta charset="UTF-8">
     <title>作品页面详情</title>
     <link rel="stylesheet" href="css/detail.css"/>
-    <style>
-        #detail{
-            height: 1850px;
-        }
-        .heng{
-            width: 40%;
-        }
-    </style>
+    <link rel="stylesheet" href="css/lightbox.min.css"/>
 </head>
 <body>
 <div id="detail">
@@ -22,26 +15,26 @@
         <div id="person">
             <h3>周莹</h3>
             <h5>信息学院|计算机2班</h5>
-
             <a href="http://101.200.55.244:8080/jumei/index.jsp">
-                <h3>聚美优品商城</h3></a>
+                <h2>作品链接：聚美优品商城</h2></a><br><br><br>
         </div>
         <div id="information">
-            <h3>项目介绍</h3>
+            <h2>团队介绍</h2>
             <p>
-                聚美优品是一家化妆品限时特卖商城，其前身为团美网。由于未来网购将会成为越来越普遍的趋势，
-                本系统仿照聚美极速免税店建造了一个商城，界面设计温馨简洁，追求能够给用户最好的用户体验。
-                用户通过该系统可以在该商城完成登录，
-                注册，将心怡的宝贝加入购物车，删除购物车中的商品和提交订单等一系列购物操作。
+                这次实习很凑巧的被我们五个人聚在一起，周莹，刘玉彤、景慧、方婉盈、刘浩如来自计算机专业，
+                杨墨涵来自信管专业。大家都是女生很快的达成了一致，
+                做了一个粉粉的销售化妆品的网上商城，在项目制作过程中大家都为这个项目贡献了自己的力量。
             </p>
         </div>
     </div>
     <div id="right">
         <div id="introduce">
-            <h2>团队介绍</h2>
-            <p>这次实习很凑巧的被我们五个人聚在一起，周莹，刘玉彤、景慧、方婉盈、刘浩如来自计算机专业，
-                杨墨涵来自信管专业。大家都是女生很快的达成了一致，
-                做了一个粉粉的销售化妆品的网上商城，在项目制作过程中大家都为这个项目贡献了自己的力量。
+            <h2>项目介绍</h2>
+            <p>
+                聚美优品是一家化妆品限时特卖商城，其前身为团美网。由于未来网购将会成为越来越普遍的趋势，
+                本系统仿照聚美极速免税店建造了一个商城，界面设计温馨简洁，追求能够给用户最好的用户体验。
+                用户通过该系统可以在该商城完成登录，
+                注册，将心怡的宝贝加入购物车，删除购物车中的商品和提交订单等一系列购物操作。
             </p>
         </div>
         <div id="members">
@@ -66,16 +59,26 @@
         </div>
         <div id="picture">
             <h2>项目展示</h2>
-            <img src="img/zhouyingimg/1.jpg" alt=""  class="heng"/>
-            <img src="img/zhouyingimg/2.jpg" alt=""  class="heng"/>
-            <img src="img/zhouyingimg/3.jpg" alt=""  class="heng"/>
-            <img src="img/zhouyingimg/4.jpg" alt=""  class="heng"/>
-            <img src="img/zhouyingimg/5.jpg" alt=""  class="heng"/>
-            <img src="img/zhouyingimg/6.jpg" alt=""  class="heng"/>
+            <div id="hovertreeshow">
+                <a class="example-image-link" href="img/zhouyingimg/1.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/zhouyingimg/1.jpg" width="38%" alt=""/>
+                </a>
+                <a class="example-image-link" href="img/zhouyingimg/2.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/zhouyingimg/2.jpg" width="38%" alt="" /></a>
+                <a class="example-image-link" href="img/zhouyingimg/3.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/zhouyingimg/3.jpg" width="38%" alt="" /></a>
+                <a class="example-image-link" href="img/zhouyingimg/4.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/zhouyingimg/4.jpg" width="38%" alt="" /></a>
+                <a class="example-image-link" href="img/zhouyingimg/5.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/zhouyingimg/5.jpg" width="38%" alt="" /></a>
+                <a class="example-image-link" href="img/zhouyingimg/6.jpg" data-lightbox="example-set">
+                    <img class="example-image" src="img/zhouyingimg/6.jpg" width="38%" alt="" /></a>
 
+            </div>
         </div>
     </div>
 </div>
+<script src="javascript/lightbox-plus-jquery.min.js"></script>
 
 </body>
 </html>
